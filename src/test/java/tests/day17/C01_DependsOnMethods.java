@@ -1,4 +1,4 @@
-package day17;
+package tests.day17;
 
 import org.testng.annotations.Test;
 import utilities.TestBaseBeforeMethodAfterMethod;

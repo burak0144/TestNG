@@ -1,9 +1,12 @@
-package day16;
+package tests.day16;
 
 import org.testng.annotations.Test;
-import utilities.TestBaseBeforeClassAfterClass;
 
-public class C02_BeforeClassAfterClass extends TestBaseBeforeClassAfterClass {
+import utilities.TestBaseBeforeMethodAfterMethod;
+
+public class C01_BeforeMethodAfterMethod extends TestBaseBeforeMethodAfterMethod {
+    // TestNG framework'unde @Before ve @After notasyonları yerine @BeforeMethod ve @AfterMethod kullanılır
+    //Çalışma prensibi JUnit deki Before,After ile aynıdır
     @Test
     public void amazonTesti() {
         driver.get("https://www.amazon.com");
