@@ -24,4 +24,7 @@ public class HotelMyCampPage {
     @FindBy(xpath = "//span[text()='ListOfUsers']")
     public WebElement sayfaAcilisiPass;
 
+    @FindBy(xpath = "//div[@class='validation-summary-errors']")
+    public WebElement girisYapilamadiYaziElementi;
+
 }
