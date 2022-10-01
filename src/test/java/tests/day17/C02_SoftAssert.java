@@ -33,5 +33,6 @@ methodun sonuna yazdigimiz mesaji bize konsolda verir.
         softAssert.assertTrue(resultWE.getText().contains("Nutella"));
 
         softAssert.assertAll();
+
 }
 }

@@ -22,5 +22,7 @@ public class C02_ConfigReader {
         hotelMyCampPage.login.click();
         //Degerleri girildiginde sayfaya basarili sekilde girilebildigini test et
         Assert.assertTrue(hotelMyCampPage.sayfaAcilisiPass.isDisplayed());
+
+        Driver.closeDriver();
     }
 }

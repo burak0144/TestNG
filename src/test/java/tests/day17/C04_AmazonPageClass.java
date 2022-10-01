@@ -11,5 +11,6 @@ public class C04_AmazonPageClass {
         AmazonPage amazonPage = new AmazonPage();
         Driver.getDriver().get("https://amazon.com");
         amazonPage.aramaKutusu.sendKeys("Nutella", Keys.ENTER);
+        Driver.closeDriver();
     }
 }
