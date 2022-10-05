@@ -7,7 +7,7 @@ import utilities.ConfigReader;
 import utilities.Driver;
 
 public class C02_ConfigReader {
-    @Test
+    @Test(groups="gp2")
     public void PositiveLoginTest() {
 
         //https://www.hotelmycamp.com adresine git

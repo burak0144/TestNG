@@ -14,7 +14,7 @@ public abstract class TestBaseBeforeClassAfterClass  {
     protected WebDriver driver;
 
     //@BeforeClass ve @AfterClass notasyonlarini TestNG de kullanirken JUnit'teki gibi static yapmaya gerek yoktur
-    @BeforeClass
+    @BeforeClass(groups= {"gp1", "gp2"})
     public void setUp(){
 
         WebDriverManager.chromedriver().setup();
@@ -23,7 +23,7 @@ public abstract class TestBaseBeforeClassAfterClass  {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 
     }
-    @AfterClass
+    @AfterClass(groups= {"gp1", "gp2"})
     public void tearDown(){
 
         // driver.quit();

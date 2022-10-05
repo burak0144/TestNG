@@ -22,7 +22,7 @@ public abstract class TestBaseBeforeMethodAfterMethod {
  protected WebDriver driver;
  protected Actions action;
 
-  @BeforeMethod
+  @BeforeMethod(groups= {"gp1", "gp2"})
     public void setUp(){
       WebDriverManager.chromedriver().setup();
       driver=new ChromeDriver();
@@ -30,7 +30,7 @@ public abstract class TestBaseBeforeMethodAfterMethod {
      driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
       action=new Actions(driver);
   }
-  @AfterMethod
+  @AfterMethod(groups= {"gp1", "gp2"})
     public void tearDown(){
      // driver.quit();
   }

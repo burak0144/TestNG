@@ -8,7 +8,7 @@ import org.testng.asserts.SoftAssert;
 import utilities.TestBaseBeforeMethodAfterMethod;
 
 public class C02_SoftAssert extends TestBaseBeforeMethodAfterMethod {
-    @Test
+    @Test(groups = "gp1")
     public void testName() {
 /*
 SoftAssert baslangic ve bitis satirlari arasindaki tum assertion'lari yapip
