@@ -19,9 +19,9 @@ public class CrossDriver {
 
     public static WebDriver getDriver(String browser) {
         //Eger browser'a bir deger atanmamissa properties dosyasindaki browser calisir .
-        browser = browser == null ? ConfigReader.getProperty("browser") :browser;
+       browser = browser == null ? ConfigReader.getProperty("browser") : browser;
         //Testlerimizi xml file'dan farkli browserlar ile calistirabilmek icin getDriver() methoduna
-        //  parametre atmamiz geekir
+        //  parametre atmamiz gerekir
         if (driver == null) {
             switch (browser){
                 //CrossBrowser icin bizim gönderdigimiz browser uzerinden calismasi icin
@@ -47,8 +47,9 @@ public class CrossDriver {
                     driver=new ChromeDriver(new ChromeOptions().setHeadless(true));
                     break;
                 default:
-                    WebDriverManager.edgedriver().setup();
-                    driver=new EdgeDriver();
+                    WebDriverManager.chromedriver().setup();
+                    driver = new ChromeDriver();
+                    break;
 
 
 

@@ -1,4 +1,4 @@
-<!--TestNG de .xml file ile parallel test yapmak itersek suite tag'indan sonra parallel tag'i ile
+<!--TestNG de .xml file ile parallel test yapmak istersek suite tag'indan sonra parallel tag'i ile
   kac browser 'da calisatirmak istersek thread-count tag'ini kullaniriz-->
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="allTests" verbose="3" parallel="classes" thread-count="2">
