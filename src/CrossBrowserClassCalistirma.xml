@@ -8,14 +8,14 @@
         gonderdgimiz browser ismini gondererek Driver'i olusturur,sayet buradan gonderdigimiz browser value'su
         yanlis olursa CrossDriver'in icerisinde bulunan ternary ile ConfigReader'da bulunan browser calisir -->
 
-        <parameter name="browser" value="crome"/>
+        <parameter name="browser" value="chrome"/>
         <classes>
             <class name="tests.day22.C01_DependsOnMethods"/>
         </classes>
 
     </test>
     <test name="Cross browser edge test">
-        <parameter name="browser" value="ege"/>
+        <parameter name="browser" value="edge"/>
         <classes>
             <class name="tests.day22.C02_SoftAssert"/>
         </classes>

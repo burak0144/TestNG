@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Parallel Cross Browser Test" parallel="classes" thread-count="3" verbose="5">
+    <test name="Parallel test 2">
+        <classes>
+
+            <class name="tests.seleniumGrid.SeleniumGrid3"></class>
+            <class name="tests.seleniumGrid.SeleniumGrid2"></class>
+            <class name="tests.seleniumGrid.SeleniumGrid1"></class>
+        </classes>
+    </test>
+</suite>
+
+
+  
