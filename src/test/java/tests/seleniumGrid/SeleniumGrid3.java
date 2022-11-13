@@ -11,6 +11,7 @@ import java.net.URL;
 
 public class SeleniumGrid3 {
     WebDriver driver;
+
     @Test
     public void test1() throws InterruptedException, MalformedURLException {
         driver = new RemoteWebDriver(new URL("http://192.168.1.33:4444"),new EdgeOptions());
