@@ -23,7 +23,9 @@ public class SeleniumGrid3 {
         Thread.sleep(3000);
         System.out.println("Current Thread : "+Thread.currentThread());
         System.out.println("Blue Rental Title : " + driver.getTitle());
+
         driver.quit();
+
 
     }
 }
