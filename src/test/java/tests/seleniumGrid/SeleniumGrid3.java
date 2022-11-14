@@ -25,7 +25,6 @@ public class SeleniumGrid3 {
         System.out.println("Blue Rental Title : " + driver.getTitle());
         driver.quit();
 
-
     }
 }
 
