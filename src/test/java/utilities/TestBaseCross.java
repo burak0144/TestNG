@@ -3,6 +3,7 @@ package utilities;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Optional;
@@ -17,7 +18,10 @@ public class TestBaseCross {
     @BeforeClass
     public void setUp(@Optional String browser){
 
+        ChromeOptions co=new ChromeOptions();
+        co.addArguments("--remote-allow-origins=*");
 
+        driver = new ChromeDriver(co);
         driver=CrossDriver.getDriver(browser);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));

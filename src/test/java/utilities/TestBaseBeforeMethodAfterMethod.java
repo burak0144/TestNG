@@ -8,6 +8,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -25,7 +26,10 @@ public abstract class TestBaseBeforeMethodAfterMethod {
   @BeforeMethod(groups= {"gp1", "gp2"})
     public void setUp(){
       WebDriverManager.chromedriver().setup();
-      driver=new ChromeDriver();
+      ChromeOptions co=new ChromeOptions();
+      co.addArguments("--remote-allow-origins=*");
+
+      driver = new ChromeDriver(co);
       driver.manage().window().maximize();
      driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
       action=new Actions(driver);
